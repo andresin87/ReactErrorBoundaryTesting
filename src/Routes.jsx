@@ -9,7 +9,7 @@ export default () => (
   <section className="page">
     <Route
       exact
-      path="/"
+      path="./"
       render={() => (
         <Page title={'home'}>
           <Buggy/>
@@ -19,7 +19,7 @@ export default () => (
     />
     <Route
       exact
-      path="/buggy"
+      path="./buggy"
       render={() => (
         <Page title={'buggy'}>
           <Buggy/>
@@ -28,7 +28,7 @@ export default () => (
     />
       <Route
         exact
-        path="/not-buggy"
+        path="./not-buggy"
         render={() => (
           <Page title={'not-buggy'}>
             <NotBuggy/>
@@ -37,7 +37,7 @@ export default () => (
       />
     <Route
       exact
-      path="/page1"
+      path="./page1"
       render={() => (
         <>
           <Buggy/>

@@ -16,6 +16,7 @@
     "publish": "gh-pages -d build",
     "deploy": "yarn run build && yarn run publish"
   },
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },
