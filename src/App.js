@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <h2>Error Boundaries Example</h2>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ErrorBoundary>
           <Menu/>
           <Routes />

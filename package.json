@@ -16,7 +16,7 @@
     "publish": "gh-pages -d build",
     "deploy": "yarn run build && yarn run publish"
   },
-  "homepage": ".",
+  "homepage": "/ReactErrorBoundaryTesting",
   "eslintConfig": {
     "extends": "react-app"
   },

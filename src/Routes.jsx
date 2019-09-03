@@ -5,11 +5,11 @@ import Page from './components/Page';
 import Buggy from './components/Buggy';
 import NotBuggy from './components/NotBuggy';
 
-const Routes = ({ match }) => (
+const Routes = () => (
   <section className="page">
     <Route
       exact
-      path={`${match.url}/`}
+      path={`/`}
       render={() => (
         <Page title={'home'}>
           <Buggy/>
@@ -19,25 +19,25 @@ const Routes = ({ match }) => (
     />
     <Route
       exact
-      path={`${match.url}/buggy`}
+      path={`/buggy`}
       render={() => (
         <Page title={'buggy'}>
           <Buggy/>
         </Page>
       )}
     />
-      <Route
-        exact
-        path={`${match.url}/not-buggy`}
-        render={() => (
-          <Page title={'not-buggy'}>
-            <NotBuggy/>
-          </Page>
-        )}
-      />
     <Route
       exact
-      path={`${match.url}/page1`}
+      path={`/not-buggy`}
+      render={() => (
+        <Page title={'not-buggy'}>
+          <NotBuggy/>
+        </Page>
+      )}
+    />
+    <Route
+      exact
+      path={`/page1`}
       render={() => (
         <>
           <Buggy/>
