@@ -35,5 +35,15 @@ export default () => (
           </Page>
         )}
       />
+    <Route
+      exact
+      path="/page1"
+      render={() => (
+        <>
+          <Buggy/>
+          <NotBuggy/>
+        </>
+      )}
+    />
   </section>
 );

@@ -28,8 +28,8 @@ export default class ErrorBoundary extends React.Component {
   }
 };
 
-export const withErrorBoundary = () => Component => (
+export const withErrorBoundary = Component => () => (
   <ErrorBoundary>
-    {Component}
+    <Component />
   </ErrorBoundary>
 );

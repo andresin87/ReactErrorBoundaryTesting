@@ -8,5 +8,7 @@ export default () => (
     <Link to="/buggy">buggy</Link>
     {' / '}
     <Link to="/not-buggy">not-buggy</Link>
+    {' / '}
+    <Link to="/page1">page1</Link>
   </section>
 );
