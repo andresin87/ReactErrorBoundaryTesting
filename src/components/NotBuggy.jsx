@@ -1,5 +1,5 @@
 import React from 'react';
-import ErrorBoundary, { withErrorBoundary } from './ErrorBoundary';
+import { withErrorBoundary } from './ErrorBoundary';
 
 class NotBuggy extends React.Component {
   state = { greeting: "Welcome"};

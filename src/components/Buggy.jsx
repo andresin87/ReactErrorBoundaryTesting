@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ErrorBoundary, { withErrorBoundary } from './ErrorBoundary';
+import { withErrorBoundary } from './ErrorBoundary';
 
 class Buggy extends React.Component {
   state = { greeting: "Welcome"};
