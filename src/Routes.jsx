@@ -1,15 +1,15 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 
 import Page from './components/Page';
 import Buggy from './components/Buggy';
 import NotBuggy from './components/NotBuggy';
 
-export default () => (
+const Routes = ({ match }) => (
   <section className="page">
     <Route
       exact
-      path="./"
+      path={`${match.url}/`}
       render={() => (
         <Page title={'home'}>
           <Buggy/>
@@ -19,7 +19,7 @@ export default () => (
     />
     <Route
       exact
-      path="./buggy"
+      path={`${match.url}/buggy`}
       render={() => (
         <Page title={'buggy'}>
           <Buggy/>
@@ -28,7 +28,7 @@ export default () => (
     />
       <Route
         exact
-        path="./not-buggy"
+        path={`${match.url}/not-buggy`}
         render={() => (
           <Page title={'not-buggy'}>
             <NotBuggy/>
@@ -37,7 +37,7 @@ export default () => (
       />
     <Route
       exact
-      path="./page1"
+      path={`${match.url}/page1`}
       render={() => (
         <>
           <Buggy/>
@@ -47,3 +47,5 @@ export default () => (
     />
   </section>
 );
+
+export default withRouter(Routes);
